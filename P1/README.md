@@ -24,7 +24,7 @@ Significa que el recurso esta en la url especificada
 **6. Utilizando el filtro de captura para la interfaz de red de Wireshark, analiza la petición
 al host: www.google.com. Mostrando la cabecera IP, la dirección IP de tu ordenador y
 la del servidor. Comprueba que, poniendo esa IP en el navegador, accedas a Google.**
-<img width="339" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/b313ae82-dc73-447f-88da-4f66356f210a">
+<img width="332" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/dacd661d-7293-48c4-a58d-5b5796aa1a38">
 <img width="342" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/ff83364b-0b15-46a9-91fb-4e8dd06fd3b3">
 <img width="344" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/abd12541-23b6-433a-9da6-5a70ca179439">
 
