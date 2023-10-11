@@ -1,1 +1,10 @@
 
+1. Instale en una máquina virtual un sistema operativo con base Linux (se recomienda
+Debian o Ubuntu) e instale apache2.
+.
+2. Explique con sus palabras que es una petición GET, POST, PUT y DELETE,
+remarcando sus diferencias.
+.
+3. Cambie del puerto 80 al puerto 4444 el servidor apache2. Muestra desde el navegador
+su funcionamiento adjuntando una captura de pantalla. 
+
