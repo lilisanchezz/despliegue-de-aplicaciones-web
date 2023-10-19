@@ -8,10 +8,17 @@ remarcando sus diferencias.
 3. Cambie del puerto 80 al puerto 4444 el servidor apache2. Muestra desde el navegador
 su funcionamiento adjuntando una captura de pantalla. 
 
+4
+<img width="400" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/db1784e5-3483-4671-ac61-87fa993b081e">
+<img width="449" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/df483a6c-0942-4f7b-b10b-ed1944c5415d">
+
 
 <img width="370" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/67bf7942-eba2-4d1b-b5e0-68f0dc213c55">
+<img width="455" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/15f8b99f-e71f-4e4d-9d08-23d8a5b7e396">
+<img width="214" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/c10d4fec-22d7-4b05-be1e-c34d38e5bc76">
 
-<img width="545" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/a5f47e25-8095-486a-931b-a170122e13a5">
+<img width="485" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/ba773583-b467-430f-b62c-7d80bd6f900c">
+
 
 5.
 ¿Dónde se encuentran los ficheros de configuración de Apache2?
