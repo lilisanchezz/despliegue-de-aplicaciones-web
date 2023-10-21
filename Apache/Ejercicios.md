@@ -21,14 +21,14 @@ su funcionamiento adjuntando una captura de pantalla.
 
 
 5.   
-¿Dónde se encuentran los ficheros de configuración de Apache2?
+¿Dónde se encuentran los ficheros de configuración de Apache2?  
 
-• Ubicación principal.*
+• Ubicación principal.  
 Se encuentra en esta URL: /etc/apache2/apache2.conf
 
 • Explora el archivo apache2.conf. Identifica las secciones principales y describe
-su propósito.
-<img width="404" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/c5a98791-5a1a-4320-9531-3c2184496716">
+su propósito.  
+<img width="404" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/c5a98791-5a1a-4320-9531-3c2184496716">  
 <img width="407" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/43c65150-9bb0-4e61-a095-8989d62888cc">
 
 Entre les seccions principals trobem el ServerRoot:
