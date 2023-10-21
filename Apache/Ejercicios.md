@@ -29,16 +29,16 @@ Se encuentra en esta URL: /etc/apache2/apache2.conf
 • Explora el archivo apache2.conf. Identifica las secciones principales y describe
 su propósito.  
 <img width="404" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/c5a98791-5a1a-4320-9531-3c2184496716">  
-<img width="407" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/43c65150-9bb0-4e61-a095-8989d62888cc">
+<img width="407" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/43c65150-9bb0-4e61-a095-8989d62888cc">  
 
-Entre les seccions principals trobem el ServerRoot:
-<img width="346" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/787379c9-9eb7-43d4-a492-e795c4dc95a5">
-El mutex:
-<img width="425" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/b375a7be-e04c-4c4d-b6cc-4850f878945a">
-<img width="210" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/19447537-d446-4681-98da-53216ced51a6">
-<img width="374" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/85a56fec-a672-45f9-a054-fe8955252d14">
+Entre les seccions principals trobem el ServerRoot:  
+<img width="346" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/787379c9-9eb7-43d4-a492-e795c4dc95a5">  
+El mutex:  
+<img width="425" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/b375a7be-e04c-4c4d-b6cc-4850f878945a">  
+<img width="210" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/19447537-d446-4681-98da-53216ced51a6">  
+<img width="374" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/85a56fec-a672-45f9-a054-fe8955252d14">  
 
-• sites-available y sites-enabled: Explica la diferencia entre estos dos directorios
+• sites-available y sites-enabled: Explica la diferencia entre estos dos directorios  
 y cómo funcionan juntos.
 • mods-available y mods-enabled: Explica la diferencia entre estos dos
 directorios.
