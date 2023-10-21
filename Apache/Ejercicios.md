@@ -3,7 +3,7 @@
 Debian o Ubuntu) e instale apache2.**
 .
 **2. Explique con sus palabras que es una petición GET, POST, PUT y DELETE,
-remarcando sus diferencias.**
+remarcando sus diferencias.**  
 GET:Para realizar peticiones al servidor. No se modifican los datos del servidor
 POST:Envío formularios HTML pudiendo modificar datos del servidor
 PUT: Para crear o reemplazar un determinado recurso del servidor  
