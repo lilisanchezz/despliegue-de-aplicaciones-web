@@ -20,7 +20,7 @@ su funcionamiento adjuntando una captura de pantalla.
 <img width="485" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/ba773583-b467-430f-b62c-7d80bd6f900c">
 
 
-5.*
+5.   
 ¿Dónde se encuentran los ficheros de configuración de Apache2?
 
 • Ubicación principal.*
