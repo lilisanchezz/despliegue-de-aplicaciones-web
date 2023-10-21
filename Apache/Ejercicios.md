@@ -1,14 +1,22 @@
 
-1. Instale en una máquina virtual un sistema operativo con base Linux (se recomienda
-Debian o Ubuntu) e instale apache2.
+**1. Instale en una máquina virtual un sistema operativo con base Linux (se recomienda
+Debian o Ubuntu) e instale apache2.**
 .
-2. Explique con sus palabras que es una petición GET, POST, PUT y DELETE,
-remarcando sus diferencias.
-.
-3. Cambie del puerto 80 al puerto 4444 el servidor apache2. Muestra desde el navegador
-su funcionamiento adjuntando una captura de pantalla. 
+**2. Explique con sus palabras que es una petición GET, POST, PUT y DELETE,
+remarcando sus diferencias.**
+GET:Para realizar peticiones al servidor. No se modifican los datos del servidor
+POST:Envío formularios HTML pudiendo modificar datos del servidor
+PUT: Para crear o reemplazar un determinado recurso del servidor  
+DELETE:Permite elimianr un recurso o documento del servidor
 
-4
+**3. Cambie del puerto 80 al puerto 4444 el servidor apache2. Muestra desde el navegador
+su funcionamiento adjuntando una captura de pantalla.**
+
+<img width="531" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/0aba2470-8f34-46dd-8eac-cb184049103c">
+
+**Instale un certificado SSL y configure su Apache para servir contenido a través de
+HTTPS en el puerto 4444. Muestre desde el navegador cómo se muestra el sitio web
+como "seguro" (aunque sea un certificado autofirmado).**
 <img width="400" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/db1784e5-3483-4671-ac61-87fa993b081e">
 <img width="449" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/df483a6c-0942-4f7b-b10b-ed1944c5415d">
 
@@ -20,18 +28,17 @@ su funcionamiento adjuntando una captura de pantalla.
 <img width="485" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/ba773583-b467-430f-b62c-7d80bd6f900c">
 
 
-5.   
-¿Dónde se encuentran los ficheros de configuración de Apache2?  
+**5.¿Dónde se encuentran los ficheros de configuración de Apache2?**  
 
-• Ubicación principal.  
+**• Ubicación principal.**  
 Se encuentra en esta URL: /etc/apache2/apache2.conf
 
-• Explora el archivo apache2.conf. Identifica las secciones principales y describe
-su propósito.  
+**• Explora el archivo apache2.conf. Identifica las secciones principales y describe
+su propósito.**  
 <img width="404" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/c5a98791-5a1a-4320-9531-3c2184496716">  
 <img width="407" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/43c65150-9bb0-4e61-a095-8989d62888cc">  
 
-Entre les seccions principals trobem el ServerRoot:  
+**Entre les seccions principals trobem el ServerRoot:** 
 <img width="346" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/787379c9-9eb7-43d4-a492-e795c4dc95a5">  
 El mutex:  
 <img width="425" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/b375a7be-e04c-4c4d-b6cc-4850f878945a">  
@@ -106,7 +113,11 @@ En un URL encontramos diferentes partes, entre estas estan:
 - La ruta que es basicamente la ubicación
 - La consulta
 **10. Explica el funcionamiento del protocolo HTTP con tus palabras.**
-  
+  El protocolo HTTP lo que hace es establecer el intercambio de documentos hipertexto en la web
+  **11. ¿Qué es un archivo .htaccess? Proporcione un ejemplo de cómo se puede utilizar
+para reescribir URL o restringir el acceso a ciertas partes de su sitio web.**
+El archivo htaccess es un archivo oculto que se utiliza para configurar funciones adicionales para sitios web alojados en el servidor web Apache. 
+
 
 
 
