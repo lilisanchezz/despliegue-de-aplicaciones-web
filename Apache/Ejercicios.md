@@ -31,9 +31,9 @@ como "seguro" (aunque sea un certificado autofirmado).**
 **5.¿Dónde se encuentran los ficheros de configuración de Apache2?**  
 
 **• Ubicación principal.**  
-Se encuentra en esta URL: /etc/apache2/apache2.conf
+Se encuentra en esta URL: /etc/apache2/apache2.conf  
 
-**• Explora el archivo apache2.conf. Identifica las secciones principales y describe
+**• Explora el archivo apache2.conf. Identifica las secciones principales y describe  
 su propósito.**  
 Las directivas globales  
 <img width="538" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/ce55eef6-e1aa-4d53-85b5-4d0ff7e395bc">  
@@ -65,9 +65,9 @@ directorios.**
 
 El mods-available se refiere al directorio que contiene los módulos disponibles en la instalación actual, y el mods-enabled indica el directorio que incluye mediante enlaces simbólicos al directorioanterior, los módulos que se van a cargar en memoria la próxima vez que se inicie
 Apache.  
-**6. ¿Dónde se encuentran los ficheros de ejecución de Apache2?**
+**6. ¿Dónde se encuentran los ficheros de ejecución de Apache2?**  
 **• Ubicación principal**  
-Se encuentra en esta URL: /etc/apache2/apache2.conf
+Se encuentra en esta URL: /etc/apache2/apache2.conf  
 **• Control del servicio: Utiliza el binario de ejecución para iniciar, detener,
 recargar y reiniciar el servidor Apache2 explicando la diferencia entre cada uno
 de los comandos utilizados.**  
@@ -108,6 +108,8 @@ Es un proceso que implica el archivo y el resguardo de los archivos de registro 
 **Monitorización en tiempo real: Utiliza herramientas como tail -f para monitorear
 en tiempo real los accesos a tu servidor web y posibles errores**  
 <img width="467" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/9223157d-47a3-4ac6-be03-71576464081b">  
+<img width="431" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/1dcb3c0c-5d12-4d30-b2d5-732c42befe62">  
+
 **• Análisis de logs: Instala y usa herramientas como goaccess para analizar y
 obtener estadísticas visuales a partir de tus logs de Apache2.**  
 <img width="492" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/d357661d-3892-44bc-905e-b3cb27da7e17">  
@@ -115,7 +117,7 @@ obtener estadísticas visuales a partir de tus logs de Apache2.**
 **¿Qué es un Firewall? ¿Para qué sirve? ¿Por qué es necesario? Instale y configure un
 Firewall en la máquina virtual para que solo permita tráfico HTTP y HTTPS. Bloquee
 todo el resto de los puertos y demuestre su funcionamiento**  
-Un firewall es un dispositivo de seguridad de la red que monitoriza el tráfico entrante y saliente y decide si debe permitir o bloquear un tráfico específico en función de un conjunto de restricciones de seguridad ya definidas. Es necesario para para protegernos de amenazas externas y que haya un control de tráfico.
+Un firewall es un dispositivo de seguridad de la red que monitoriza el tráfico entrante y saliente y decide si debe permitir o bloquear un tráfico específico en función de un conjunto de restricciones de seguridad ya definidas. Es necesario para para protegernos de amenazas externas y que haya un control de tráfico.  
 <img width="451" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/71500b82-7b9e-4153-88aa-d99ba53d38c6">  
 <img width="536" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/9c449648-a02a-4873-9bb0-b1c75c43d735">  
 <img width="497" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/6e2feb94-5862-44f8-8593-1e39d00b67ff">  
