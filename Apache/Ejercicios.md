@@ -39,6 +39,12 @@ El mutex:
 <img width="374" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/85a56fec-a672-45f9-a054-fe8955252d14">  
 
 • sites-available y sites-enabled: Explica la diferencia entre estos dos directorios  
-y cómo funcionan juntos.
+y cómo funcionan juntos.  
+El sites-available indica el directorio que contiene los sitios disponibles en la instalación
+actual. En cambio el sites-enabled se refiere al directorio que incluye mediante enlaces simbólicos al directorio
+anterior, los sitios que va a utilizar Apache la próxima vez que se inicie  
 • mods-available y mods-enabled: Explica la diferencia entre estos dos
 directorios.
+El mods-available se refiere al directorio que contiene los módulos disponibles en la instalación actual, y el mods-enabled indica el directorio que incluye mediante enlaces simbólicos al directorio
+anterior, los módulos que se van a cargar en memoria la próxima vez que se inicie
+Apache.
