@@ -1,1 +1,48 @@
+import java.util.LinkedList;
+
+public class App<T> {
+    private LinkedList<T> list;
+
+    public App() {
+        list = new LinkedList<>();
+    }
+
+    public boolean isEmpty() {
+        return list.isEmpty();
+    }
+
+    public T removeFirst() {
+        return list.removeFirst();
+    }
+
+    public T getFirst() {
+        return list.getFirst();
+    }
+
+    public void add(T item) {
+        list.addFirst(item);
+    }
+
+    @Override
+    public String toString() {
+        return list.toString();
+    }
+
+    public static void main(String[] args) {
+        App<Integer> stack = new App<>();
+        stack.add(1);
+        stack.add(2);
+        stack.add(3);
+        System.out.println("La pila está vacía ? " + stack.isEmpty());
+        System.out.println("Pila: " + stack);
+        System.out.println("Primer elemento: " + stack.getFirst());
+        System.out.println("Eliminar primer elemento: " + stack.removeFirst());
+        System.out.println("Pila después de eliminar: " + stack);
+        stack.add(1); // Agregar un elemento al inicio de la lista
+        System.out.println("Añadir un elemento al inicio de la lista: " + stack);
+    }
+}
+
+        
+
 
