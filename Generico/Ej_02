@@ -1,0 +1,88 @@
+package Ejercicio2;
+
+public class App<T> {
+    private T[] elements;  // El array genérico para almacenar los elementos
+    private int size;      // El número de objetos insertados
+
+    // Constructor para crear una pila vacía
+    public App() {
+        this.elements = (T[]) new Object[10]; // Le he puesto esta capacidad, pero podría tener la que quisiese
+        this.size = 0;
+    }
+
+    // Comprueba si la lista está vacía.
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    // Extrae el primer elemento eliminándolo de la lista.
+    public T removeFirst() {
+        
+        
+        T item = elements[0];
+        
+        // Desplazar manualmente los elementos
+        for (int i = 0; i < size - 1; i++) {
+            elements[i] = elements[i + 1];
+        }
+        
+        size--;
+        
+        return item;
+    }
+    
+
+    // Extrae el primer elemento.
+    public T getFirst() {
+        
+        return elements[0];
+    }
+
+    public void add(T item) {
+      
+        
+        if (size > 0) {
+         
+            for (int i = size; i > 0; i--) {
+                elements[i] = elements[i - 1];
+            }
+        }
+        
+       
+        elements[0] = item;
+        size++;
+    }
+    
+
+    // Devuelve un String que visualiza los datos de la lista.
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < size; i++) {
+            sb.append(elements[i]);
+            if (i < size - 1) {
+                sb.append(", ");
+            }
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+
+public static void main(String[] args) {
+        App<Integer> stack = new App<>();
+        stack.add(1);
+        stack.add(2);
+        stack.add(3);
+
+        System.out.println("Lista: " + stack);
+        System.out.println("Está vacía ? " + stack.isEmpty());
+        System.out.println("Pila: " + stack);
+        System.out.println("Primer elemento: " + stack.getFirst());
+        System.out.println("Eliminar primer elemento: " + stack.removeFirst());
+        System.out.println("Lista después de eliminar: " + stack);
+        stack.add(1); // Agregar un elemento al inicio de la lista
+        System.out.println("Añadir un elemento al inicio de la lista: " + stack);
+    }
+}
