@@ -40,7 +40,7 @@ Las directivas globales
 Módulos  
 <img width="457" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/b1010ae9-ff15-4de2-8c5a-1dd1113553fc">  
 Directorios  
-<img width="509" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/ac733e93-64a8-4321-ba2c-2be85e69882d">
+<img width="509" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/ac733e93-64a8-4321-ba2c-2be85e69882d">  
 Logging  
 <img width="473" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/daf8addd-1bdd-492b-a706-89b7a7189f55">  
 Ajustes globales  
