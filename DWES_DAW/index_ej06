@@ -1,0 +1,76 @@
+<?php
+try {
+    $conexion = new PDO('mysql:host=db.fmesasc.com;dbname=daw2', 'daw2', 'Gimbernat');
+
+    if (isset($_POST['registrar'])) {
+        $nombre = $_POST['nombre'];
+        $correo = $_POST['correo'];
+        $contrasena = password_hash($_POST['contrasena'], PASSWORD_DEFAULT);
+        $fecha_nacimiento = $_POST['fecha_nacimiento'];
+        $es_admin = 0;
+
+        $sql = "INSERT INTO lsanchezf3_usuarios(nombre, correo, contrasena, fecha_nacimiento, es_admin, imagen)
+               VALUES (:nombre, :correo, :contrasena, :fecha_nacim, :admin, NULL )";
+        $stmt = $conexion->prepare($sql);
+        $stmt->bindParam(':nombre', $nombre);
+        $stmt->bindParam(':correo', $correo);
+        $stmt->bindParam(':contrasena', $contrasena);
+        $stmt->bindParam(':fecha_nacim', $fecha_nacimiento);
+        $stmt->bindParam(':admin', $es_admin);
+        $stmt->execute();
+    }
+
+} catch (PDOException $e){
+    echo "Hay un error: " . $e->getMessage();
+}
+?>
+
+<h2>Registro</h2>
+<form method="post">
+    <label for="nombre">Nombre :</label>
+    <input type="text" name="nombre" required><br>
+    <label for="correo">Correo: </label>
+    <input type=email" name="correo" required><br>
+    <label for="contrasena">Contraseña: </label>
+    <input type="password" name="contrasena" required><br>
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+    <input type="date" name="fecha_nacimiento" required><br>
+    <input type="submit" name="registrar" value="Registrar"><br>
+</form>
+
+
+
+<?php
+$conexion = new PDO('mysql:host=db.fmesasc.com;dbname=daw2', 'daw2', 'Gimbernat');
+$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+$usuariosPorPagina = 3;
+$paginaActual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
+$inicio = ($paginaActual - 1) * $usuariosPorPagina;
+
+$sql = "SELECT * FROM lsanchezf3_usuarios ORDER BY id LIMIT $inicio, $usuariosPorPagina";
+$stmt = $conexion->prepare($sql);
+$stmt->execute();
+$usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$totalUsuarios = $conexion->query("SELECT COUNT(id) FROM lsanchezf3_usuarios")->fetchColumn();
+$totalPaginas = ceil($totalUsuarios / $usuariosPorPagina);
+
+$conexion = null;
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Usuarios</title>
+</head>
+<body>
+<h2>Listado de Usuarios</h2>
+
+<ul class="pagination">
+    <?php for ($i = 1; $i <= $totalPaginas; $i++) : ?>
+        <li><a href="usuarios.php?pagina=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+    <?php endfor; ?>
+</ul>
+</body>
+</html>
