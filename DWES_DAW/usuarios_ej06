@@ -1,0 +1,51 @@
+<?php
+$conexion = new PDO('mysql:host=db.fmesasc.com;dbname=daw2', 'daw2', 'Gimbernat');
+$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+$usuariosPorPagina = 3;
+$paginaActual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
+$inicio = ($paginaActual - 1) * $usuariosPorPagina;
+
+$sql = "SELECT * FROM lsanchezf3_usuarios ORDER BY id LIMIT $inicio, $usuariosPorPagina";
+$stmt = $conexion->prepare($sql);
+$stmt->execute();
+$usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$totalUsuarios = $conexion->query("SELECT COUNT(id) FROM lsanchezf3_usuarios")->fetchColumn();
+$totalPaginas = ceil($totalUsuarios / $usuariosPorPagina);
+
+$conexion = null;
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Usuarios</title>
+</head>
+<body>
+<h2>Listado de Usuarios</h2>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Fecha nacimiento</th>
+        <th>Admin</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($usuarios as $usuario) : ?>
+        <tr>
+            <td><?php echo $usuario['id']; ?></td>
+            <td><?php echo $usuario['nombre']; ?></td>
+            <td><?php echo $usuario['correo']; ?></td>
+            <td><?php echo $usuario['fecha_nacimiento']; ?></td>
+            <td><?php echo $usuario['es_admin']; ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+<ul>
+    <a href="index.php" class="boton">Volver al registro</a>
+</ul>
