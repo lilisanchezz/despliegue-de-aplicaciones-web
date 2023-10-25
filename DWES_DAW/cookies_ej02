@@ -1,0 +1,10 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nombre = $_POST['nombre'];
+    $lengua = $_POST['lengua'];
+
+    setcookie('nombre_usuario', $nombre, time() + 3600, '/');
+    setcookie('lengua', $lengua, time() + 3600, '/');
+}
+?>
+
