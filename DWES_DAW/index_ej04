@@ -1,0 +1,21 @@
+<?php
+
+    $conexion = new PDO('mysql:host=db.fmesasc.com;dbname=daw2', 'daw2', 'Gimbernat');
+    $sql = "CREATE TABLE lsanchezf3_usuarios (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        nombre VARCHAR(255) NOT NULL,
+        correo VARCHAR(255) NOT NULL,
+        contrasena VARCHAR(255) NOT NULL,
+        fecha_nacimiento DATE NOT NULL,
+        es_admin BOOLEAN NOT NULL,
+        imagen BLOB,
+        UNIQUE (correo)
+    )";
+
+ $resultado=$conexion->query("SHOW TABLES");
+ while($fila=$resultado->fetch(PDO::FETCH_NUM))
+ {
+     echo $fila[0] . "<br>";
+ }
+
+?>
