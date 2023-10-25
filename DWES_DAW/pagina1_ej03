@@ -1,0 +1,28 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['nombre'])) {
+    header('Location: login.php');
+    exit();
+}
+
+if (isset($_POST['siguiente'])) {
+    $_SESSION['puntos_acumulados'] += 10;
+    header('Location: pagina2.php');
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página 1</title>
+</head>
+<body>
+<h1>Página 1</h1>
+<p>Nombre de Usuario: <?php echo $_SESSION['nombre']; ?></p>
+<p>Puntos Acumulados: <?php echo $_SESSION['puntos_acumulados']; ?></p>
+<form action="pagina1.php" method="post">
+    <input type="submit" name="siguiente" value="Siguiente">
+</form>
+</body>
+</html>
