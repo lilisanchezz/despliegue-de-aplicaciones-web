@@ -1,1 +1,69 @@
+<?php
+
+session_start();
+
+if (isset($_POST['nombre'])) {
+    $_SESSION['nombre'] = $_POST['nombre'];
+    $_SESSION['puntos_acumulados'] = 0;
+    header('Location: pagina1.php');
+    exit();
+}
+
+if (!isset($_SESSION['nombre'])) {
+    header('Location: login.php');
+    exit();
+}
+
+if (isset($_POST['siguiente'])) {
+    $_SESSION['puntos_acumulados'] += 10;
+    header('Location: pagina2.php');
+    exit();
+}
+
+if (isset($_POST['volver'])) {
+    session_unset();
+    session_destroy();
+    header('Location: login.php');
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+<h1>Iniciar Sesión</h1>
+<form action="index.php" method="post">
+    <label for="nombre">Nombre de Usuario:</label>
+    <input type="text" name="nombre" required>
+    <input type="submit" value="Iniciar Sesión">
+</form>
+
+<?php if (isset($_SESSION['nombre'])): ?>
+    <h1>Página 1</h1>
+    <p>Nombre de Usuario: <?php echo $_SESSION['nombre']; ?></p>
+    <p>Puntos Acumulados: <?php echo $_SESSION['puntos_acumulados']; ?></p>
+    <form action="pagina1.php" method="post">
+        <input type="submit" name="siguiente" value="Siguiente">
+    </form>
+
+    <h1>Página 2</h1>
+    <p>Nombre de Usuario: <?php echo $_SESSION['nombre']; ?></p>
+    <p>Puntos Acumulados: <?php echo $_SESSION['puntos_acumulados']; ?></p>
+    <form action="pagina2.php" method="post">
+        <input type="submit" name="siguiente" value="Siguiente">
+    </form>
+
+    <h1>Página 3</h1>
+    <p>Nombre de Usuario: <?php echo $_SESSION['nombre']; ?></p>
+    <p>Puntos Acumulados: <?php echo $_SESSION['puntos_acumulados']; ?></p>
+    <form action="pagina3.php" method="post">
+        <input type="submit" name="volver" value="Cerrar Sesión">
+    </form>
+<?php endif; ?>
+
+</body>
+</html>
 
