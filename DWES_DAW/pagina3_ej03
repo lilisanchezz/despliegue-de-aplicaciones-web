@@ -1,0 +1,29 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['nombre'])) {
+    header('Location: login.php');
+    exit();
+}
+
+if (isset($_POST['volver'])) {
+    session_unset();
+    session_destroy();
+    header('Location: login.php');
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página 3</title>
+</head>
+<body>
+<h1>Página 3</h1>
+<p>Nombre de Usuario: <?php echo $_SESSION['nombre']; ?></p>
+<p>Puntos Acumulados: <?php echo $_SESSION['puntos_acumulados']; ?></p>
+<form action="pagina3.php" method="post">
+    <input type="submit" name="volver" value="Cerrar Sesión">
+</form>
+</body>
+</html>
