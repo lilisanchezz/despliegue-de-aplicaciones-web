@@ -10,4 +10,6 @@
 
 <img width="465" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/bf60b305-10fd-4752-bfe1-991113ea504a">
 <img width="466" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/6cf9f520-e01b-49b7-a6ad-ed07bcb23d9a">
+<img width="482" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/f2db1b25-2c60-414d-957a-322f3ef067cf">
+
 
