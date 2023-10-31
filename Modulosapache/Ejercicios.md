@@ -13,3 +13,7 @@
 <img width="482" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/f2db1b25-2c60-414d-957a-322f3ef067cf">
 
 
+<img width="407" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/d05e82b5-3d91-4b7d-a7be-f89754f199e6">
+<img width="446" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/4a9f0471-ac74-4d57-9782-0c52c3e45858">
+
+
