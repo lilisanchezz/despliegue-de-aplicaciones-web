@@ -16,4 +16,5 @@
 <img width="407" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/d05e82b5-3d91-4b7d-a7be-f89754f199e6">
 <img width="446" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/4a9f0471-ac74-4d57-9782-0c52c3e45858">
 
+<img width="369" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/0b626a8d-f7bf-463d-86c5-dafb58925122">
 
