@@ -16,14 +16,14 @@ para cada uno de los dominios. Recuerda que con a2ensite puedes crear los enlace
 simbólicos necesarios para añadir esta configuración a la ejecución de apache.
 <img width="490" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/e113130b-c629-4dd3-aaa8-45463b32816e">  
 
-<img width="490" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/138813a4-f2f3-4b04-bcec-c2f4bd1a2fc7">  
-<img width="476" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/994ebf82-3823-4ad9-b8b7-d03d7870074c">
 
-<img width="500" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/3922cb77-560b-4f2e-a2e3-bf71f8b8719a">  
-<img width="475" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/acbe0175-a016-468b-8537-3d28eaa8543d">
-<img width="541" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/6c94d82e-4c5c-45d2-9091-1e8fa5754e7a">
-<img width="436" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/90f31270-bc6d-418c-aafa-29cbd587168a">
-<img width="485" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/14910e15-ba86-42c3-b862-ef430b134a5b">
+<img width="476" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/994ebf82-3823-4ad9-b8b7-d03d7870074c">  
+
+<img width="500" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/3922cb77-560b-4f2e-a2e3-bf71f8b8719a">    
+<img width="475" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/acbe0175-a016-468b-8537-3d28eaa8543d">  
+<img width="541" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/6c94d82e-4c5c-45d2-9091-1e8fa5754e7a">  
+<img width="436" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/90f31270-bc6d-418c-aafa-29cbd587168a">  
+<img width="485" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/14910e15-ba86-42c3-b862-ef430b134a5b">  
 
 
 
