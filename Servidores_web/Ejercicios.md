@@ -21,6 +21,8 @@ simbólicos necesarios para añadir esta configuración a la ejecución de apach
 <img width="500" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/3922cb77-560b-4f2e-a2e3-bf71f8b8719a">  
 <img width="483" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/99db41ad-2b8e-446c-abc3-7b825d2d6647">
 <img width="473" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/8a632321-9cbb-4c29-bcf5-3abfe8e9ac6b">
+<img width="539" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/72e0cdde-837f-41a6-b4bf-1df2f7463ff9">
+
 
 
 
