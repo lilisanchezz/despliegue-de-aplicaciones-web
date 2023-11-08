@@ -22,7 +22,7 @@ simbólicos necesarios para añadir esta configuración a la ejecución de apach
 <img width="475" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/acbe0175-a016-468b-8537-3d28eaa8543d">
 <img width="541" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/6c94d82e-4c5c-45d2-9091-1e8fa5754e7a">
 <img width="436" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/90f31270-bc6d-418c-aafa-29cbd587168a">
-![Uploading image.png…]()
+<img width="485" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/14910e15-ba86-42c3-b862-ef430b134a5b">
 
 
 
@@ -30,6 +30,8 @@ simbólicos necesarios para añadir esta configuración a la ejecución de apach
 <img width="483" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/99db41ad-2b8e-446c-abc3-7b825d2d6647">
 <img width="473" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/8a632321-9cbb-4c29-bcf5-3abfe8e9ac6b">
 <img width="539" alt="image" src="https://github.com/lilisanchezz/despliegue-de-aplicaciones-web/assets/144775558/72e0cdde-837f-41a6-b4bf-1df2f7463ff9">
+
+
 
 
 
