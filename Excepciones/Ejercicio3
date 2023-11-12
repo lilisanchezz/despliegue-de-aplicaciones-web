@@ -1,0 +1,15 @@
+package EX_03;
+public class App {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5};
+
+        try {
+            
+            int elemento = array[10];
+            System.out.println("Este mensaje nunca se imprimirá.");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            
+            System.out.println("Se ha producido una excepción: " + e.getMessage());
+        }
+    }
+}
