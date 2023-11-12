@@ -1,0 +1,30 @@
+package EX_04;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class App {
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean entradaValida = false;
+
+        while (!entradaValida) {{
+    try {
+        int numero;
+        for (int i=0; i<4;i++){
+            System.out.println("Introduce un número");
+           
+            numero = scanner.nextInt();
+                int cuadrado = numero * numero;
+                System.out.println("El cuadrado de " + numero + " es " + cuadrado);
+                entradaValida=true;
+        }
+
+    }catch(InputMismatchException ime){
+        System.out.println("Error, debes introducir un numero");
+    }
+        }
+    }
+}
+}
+
+
