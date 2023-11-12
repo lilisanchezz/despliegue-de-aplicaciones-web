@@ -1,0 +1,43 @@
+package readxmldomparser.EX_01;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class App {
+
+    private static final String XATAKA_SITEMAP_URL = "https://www.xataka.com/sitemap.xml";
+
+    public static void main(String[] args) {
+        try {
+            URL sitemapURL = new URL(XATAKA_SITEMAP_URL);
+            HttpURLConnection connection = (HttpURLConnection) sitemapURL.openConnection();
+            connection.setRequestMethod("GET");
+
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(connection.getInputStream());
+
+            Element root = doc.getDocumentElement();
+            NodeList urlNodes = root.getElementsByTagName("loc");
+
+            System.out.println("URLs encontradas en el sitemap de Xataka:");
+
+            for (int i = 0; i < urlNodes.getLength(); i++) {
+                String xatakaURL = urlNodes.item(i).getTextContent();
+                System.out.println(xatakaURL);
+            }
+        } catch (ParserConfigurationException | SAXException | IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
