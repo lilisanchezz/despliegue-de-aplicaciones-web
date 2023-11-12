@@ -1,0 +1,94 @@
+package readxmldomparser.EX_03;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerFactory;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class App {
+    private static final String SITEMAP_URL = "https://www.xataka.com/sitemap.xml";
+    private static final String OUTPUT_FOLDER = "XMLs/";
+
+    public static void main(String[] args) {
+        try {
+            URL sitemapURL = new URL(SITEMAP_URL);
+            HttpURLConnection connection = (HttpURLConnection) sitemapURL.openConnection();
+            connection.setRequestMethod("GET");
+
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(connection.getInputStream());
+
+            Element root = doc.getDocumentElement();
+            NodeList urlNodes = root.getElementsByTagName("loc");
+
+            for (int i = 0; i < urlNodes.getLength(); i++) {
+                String newsSitemapURL = urlNodes.item(i).getTextContent();
+                processNewsSitemap(newsSitemapURL, i);
+            }
+        } catch (ParserConfigurationException | SAXException | IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void processNewsSitemap(String newsSitemapURL, int index) {
+        try {
+            URL url = new URL(newsSitemapURL);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(connection.getInputStream());
+
+            NodeList urlNodes = doc.getElementsByTagName("loc");
+
+            File folder = new File(OUTPUT_FOLDER);
+            if (!folder.exists()) {
+                if (!folder.mkdir()) {
+                    System.err.println("Error al crear la carpeta " + OUTPUT_FOLDER);
+                    return;
+                }
+            }
+
+            File outputFile = new File(folder, "sitemap_" + index + ".xml");
+            FileWriter writer = new FileWriter(outputFile);
+
+            Document urlsDoc = db.newDocument();
+            Element urlsElement = urlsDoc.createElement("urls");
+
+            for (int i = 0; i < urlNodes.getLength(); i++) {
+                String newsURL = urlNodes.item(i).getTextContent();
+                Element urlElement = urlsDoc.createElement("url");
+                urlElement.appendChild(urlsDoc.createTextNode(newsURL));
+                urlsElement.appendChild(urlElement);
+            }
+
+            urlsDoc.appendChild(urlsElement);
+
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            javax.xml.transform.Transformer transformer = transformerFactory.newTransformer();
+            javax.xml.transform.dom.DOMSource source = new javax.xml.transform.dom.DOMSource(urlsDoc);
+            javax.xml.transform.stream.StreamResult result = new javax.xml.transform.stream.StreamResult(writer);
+            transformer.transform(source, result);
+
+            writer.close();
+
+            System.out.println("Archivo XML generado: " + outputFile.getAbsolutePath());
+
+        } catch (ParserConfigurationException | SAXException | IOException | javax.xml.transform.TransformerException e) {
+            e.printStackTrace();
+        }
+    }
+}
