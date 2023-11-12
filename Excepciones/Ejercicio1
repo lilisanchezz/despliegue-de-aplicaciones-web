@@ -1,0 +1,14 @@
+package EX_01;
+
+public class App extends Exception {
+
+    // Constructor sin parámetros que invoca al constructor de Exception
+    public App() {
+        super();
+    }
+
+    // Constructor que recibe un String y lo pasa al constructor de Exception
+    public App(String message) {
+        super(message);
+    }
+}
