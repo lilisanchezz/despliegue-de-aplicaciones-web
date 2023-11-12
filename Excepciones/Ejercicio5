@@ -1,0 +1,34 @@
+package EX_05;
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            System.out.println("Ingrese el numerador: ");
+            int numerator = scanner.nextInt();
+
+            System.out.println("Ingrese el denominador: ");
+            int denominator = scanner.nextInt();
+
+            int result = divideNumbers(numerator, denominator);
+            System.out.println("Resultado de la división: " + result);
+
+        } catch (ArithmeticException e) {
+            System.err.println("Error: División por cero no permitida.");
+        } catch (Exception e) {
+            System.err.println("Error inesperado: " + e.getMessage());
+        } finally {
+            
+            scanner.close();
+        }
+    }
+
+    private static int divideNumbers(int numerator, int denominator) {
+        if (denominator == 0) {
+            throw new ArithmeticException("División por cero no permitida.");
+        }
+        return numerator / denominator;
+    }
+}
